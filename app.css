@@ -956,6 +956,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: center;
 }
 
+.bg-bottom {
+  background-position: bottom;
+}
+
 .fill-current {
   fill: currentColor;
 }
