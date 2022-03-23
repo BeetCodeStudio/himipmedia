@@ -135,28 +135,35 @@
                                     class="w-full text-left py-2 px-2  text-sm font-semibold hover:text-slate-100 text-slate-200 capitalize">Profil
                                     Jurusan</button>
                                 <div x-show="open" class="flex flex-col">
-                                    <a href="/upcoming-events" class="hover:text-blue-800 block px-4 py-2 text-sm">Sambutan
+                                    <a href="sambutanjurusan.html" class="hover:text-blue-800 block px-4 py-2 text-sm">Sambutan
                                         Ketua Jurusan</a>
-                                    <a href="/press-release" class=" hover:text-blue-800 block px-4 py-2 text-sm">Sejarah
+                                    <a href="visi-misijurusan.html" class=" hover:text-blue-800 block px-4 py-2 text-sm">Sejarah
                                         dan Visi Misi Jurusan</a>
-                                    <a href="/press-release" class=" hover:text-blue-800 block px-4 py-2 text-sm">Profil
+                                    <a href="profildosen.html" class=" hover:text-blue-800 block px-4 py-2 text-sm">Profil
                                         Dosen</a>
-                                    <a href="/press-release" class=" hover:text-blue-800 block px-4 py-2 text-sm">Kurikulum</a>
+                                    <a href="kurikulum.html" class=" hover:text-blue-800 block px-4 py-2 text-sm">Kurikulum</a>
                                 </div>
                             </li>
-                            <li class="flex">
-                                <a href=""
-                                    class="w-full py-2 px-2  text-sm font-semibold hover:text-slate-100 text-slate-200 capitalize">Profil
-                                    HIMIP</a>
+                            <li class="flex flex-col text-slate-100" x-data="{ open : false}">
+                                <button href="" @click="open = !open"
+                                    class="w-full text-left py-2 px-2  text-sm font-semibold hover:text-slate-100 text-slate-200 capitalize">Profil
+                                    HIMIP</button>
+                                <div x-show="open" class="flex flex-col">
+                                    <a href="sambutan.html" class="hover:text-blue-800 block px-4 py-2 text-sm">Sambutan
+                                        Bupati HIMIP</a>
+                                    <a href="visi-misi.html" class=" hover:text-blue-800 block px-4 py-2 text-sm">Visi Misi</a>
+                                    <a href="struktur.html" class=" hover:text-blue-800 block px-4 py-2 text-sm">Struktur HIMIP</a>
+                                    <a href="index.html" class=" hover:text-blue-800 block px-4 py-2 text-sm">Leadership Insight</a>
+                                </div>
                             </li>
                             <li class="" x-data="{open : false}">
                                 <button @click="open = !open"
                                     class="w-full py-2 px-2  text-left text-sm font-semibold hover:text-slate-100 text-slate-200 capitalize">kegiatan</button>
                                 <div class="" x-show="open" x-cloak>
                                     <div class="">
-                                        <a href="/upcoming-events"
+                                        <a href="upcomingevent.html"
                                             class="text-gray-700 hover:text-blue-800 block px-4 py-2 text-sm">Upcoming Events</a>
-                                        <a href="/press-release" class="text-gray-700 hover:text-blue-800 block px-4 py-2 text-sm">Press
+                                        <a href="pressrelease.html" class="text-gray-700 hover:text-blue-800 block px-4 py-2 text-sm">Press
                                             Release</a>
                                     </div>
                                 </div>
