@@ -1127,6 +1127,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
+.p-0{
+  padding: 0px;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1264,6 +1268,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .font-poppins{
@@ -1761,9 +1769,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 0px;
   }
 
+  .md\:p-10{
+    padding: 2.5rem;
+  }
+
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:text-left{
