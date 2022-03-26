@@ -2,7 +2,7 @@
 <div class="h-14">
 
 </div>
-<div class="fixed bg-blue-800 w-full top-0 z-10 shadow-2xl" x-data="{open : false}"> 
+<div class="fixed bg-blue-800 w-full top-0 z-10 shadow-2xl font-poppins"> 
     <header class="container mx-auto">
         <nav class="px-5 py-3 flex justify-between items-center">
             <!-- logo -->
@@ -15,20 +15,15 @@
             <div class="hidden md:flex">
                 <ul class="flex space-x-7">
                     <li>
-                        <a href="index.html" class="text-md font-semibold hover:text-slate-100 text-slate-300">Home</a>
+                        <a href="index.html" class="text-md font-semibold text-slate-300">Home</a>
                     </li>
 
-                    <li x-data="{open: false}" class="" @mouseover="open = true" @mouseover.away="open = false">
+                    <li x-data="{hover1: false}" class="" @mouseover="hover1 = true" @mouseover.away="hover1 = false">
                         <div class="relative ">
-                            <button @click="open = !open"
-                                class="text-md font-semibold hover:text-slate-100 text-slate-300 flex gap-2 justify-center items-center">Profil
-                                Jurusan<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg></button>
-                            <div class="origin-top-left absolute top-6 left-0 w-40 " x-show="open" x-cloak>
+                            <button @click="hover1 = !hover1"
+                                class="text-md font-semibold text-slate-300 flex gap-2 justify-center items-center">Profil
+                                Jurusan</button>
+                            <div class="origin-top-left absolute top-6 left-0 w-40 " x-show="hover1"  >
                                 <div class="h-3 bg-transparent">
                                 </div>
                                 <div
@@ -48,19 +43,14 @@
                             </div>
                         </div>
                     </li>
-                    <li x-data="{open: false}" class="" @mouseover="open = true" @mouseover.away="open = false">
+                    <li x-data="{hover2: false}" class="" @mouseover="hover2 = true" @mouseover.away="hover2 = false">
                         <div class="relative ">
-                            <button @click="open = !open"
-                                class="text-md font-semibold hover:text-slate-100 text-slate-300 flex gap-2 justify-center items-center">Profil
+                            <button @click="hover2 = !hover2"
+                                class="text-md font-semibold text-slate-300 flex gap-2 justify-center items-center">Profil
                                 HIMIP
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
+                             
                             </button>
-                            <div class="origin-top-left absolute top-6 left-0 w-40" x-show="open" x-cloak>
+                            <div class="origin-top-left absolute top-6 left-0 w-40" x-show="hover2">
                                 <div class="h-3 bg-transparent">
                                 </div>
                                 <div
@@ -83,21 +73,16 @@
                     </li>
                     <li>
                         <a href="articles.html"
-                            class="text-md font-semibold hover:text-slate-100 text-slate-300">Dinding Kreatif
+                            class="text-md font-semibold text-slate-300">Dinding Kreatif
                             Mahasiswa</a>
                     </li>
-                    <li x-data="{open: false}" class="" @mouseover="open = true" @mouseover.away="open = false">
+                    <li x-data="{ hover3: false}" class="" @mouseover=" hover3 = true" @mouseover.away=" hover3 = false">
                         <div class="relative ">
                             <button
-                                class="text-md font-semibold hover:text-slate-100 text-slate-300 flex items-center justify-center gap-2">Kegiatan
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
+                                class="text-md font-semibold text-slate-300 flex items-center justify-center gap-2">Kegiatan
+                                
                             </button>
-                            <div class="origin-top-left absolute top-6 right-0 w-36 " x-show="open" x-cloak>
+                            <div class="origin-top-left absolute top-6 right-0 w-36 " x-show="hover3"  >
                                 <div class="h-3 bg-transparent">
                                 </div>
                                 <div
@@ -121,20 +106,20 @@
                 <button @click="open = !open" class="flex items-center justify-center text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                      </svg>
                 </button>
                 <div class="fixed top-14 left-0 w-full z-0">
-                    <div x-show="open" @click.outside="open = !open" class="absolute top-0 w-full bg-blue-700 shadow-md p-5">
+                    <div x-show="open" @click.outside="open = !open" class="absolute top-0 w-full bg-slate-200 shadow-md p-5">
                         <ul class="text-lg">
                             <li class="flex">
-                                <a href="p"
-                                    class="w-full py-2 px-2  text-sm font-semibold hover:text-slate-100 text-slate-200 capitalize">Beranda</a>
+                                <a href="index.html"
+                                    class="w-full py-2 px-2  text-sm font-semibold  capitalize">Beranda</a>
                             </li>
-                            <li class="flex flex-col text-slate-100" x-data="{ open : false}">
-                                <button href="" @click="open = !open"
-                                    class="w-full text-left py-2 px-2  text-sm font-semibold hover:text-slate-100 text-slate-200 capitalize">Profil
+                            <li class="flex flex-col text-slate-700" x-data="{ dropdown1 : false}">
+                                <button @click="dropdown1 = !dropdown1"
+                                    class="w-full text-left py-2 px-2  text-sm font-semibold  capitalize">Profil
                                     Jurusan</button>
-                                <div x-show="open" class="flex flex-col">
+                                <div x-show="dropdown1"  class="flex flex-col">
                                     <a href="sambutanjurusan.html" class="hover:text-blue-800 block px-4 py-2 text-sm">Sambutan
                                         Ketua Jurusan</a>
                                     <a href="visi-misijurusan.html" class=" hover:text-blue-800 block px-4 py-2 text-sm">Sejarah
@@ -144,9 +129,9 @@
                                     <a href="kurikulum.html" class=" hover:text-blue-800 block px-4 py-2 text-sm">Kurikulum</a>
                                 </div>
                             </li>
-                            <li class="flex flex-col text-slate-100" x-data="{ open : false}">
+                            <li class="flex flex-col" x-data="{ open : false}">
                                 <button href="" @click="open = !open"
-                                    class="w-full text-left py-2 px-2  text-sm font-semibold hover:text-slate-100 text-slate-200 capitalize">Profil
+                                    class="w-full text-left py-2 px-2  text-sm font-semibold capitalize">Profil
                                     HIMIP</button>
                                 <div x-show="open" class="flex flex-col">
                                     <a href="sambutan.html" class="hover:text-blue-800 block px-4 py-2 text-sm">Sambutan
@@ -158,8 +143,8 @@
                             </li>
                             <li class="" x-data="{open : false}">
                                 <button @click="open = !open"
-                                    class="w-full py-2 px-2  text-left text-sm font-semibold hover:text-slate-100 text-slate-200 capitalize">kegiatan</button>
-                                <div class="" x-show="open" x-cloak>
+                                    class="w-full py-2 px-2  text-left text-sm font-semibold capitalize">kegiatan</button>
+                                <div class="" x-show="open"  >
                                     <div class="">
                                         <a href="upcomingevent.html"
                                             class="text-gray-700 hover:text-blue-800 block px-4 py-2 text-sm">Upcoming Events</a>
