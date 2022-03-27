@@ -14,7 +14,20 @@
 } */
 
 @layer components {
+  /* judul besar */
     .title {
+      @apply text-3xl font-semibold font-poppins text-blue-700;
+    }
+    /* judul kecil */
+    .subtitle {
+      @apply text-center md:text-left w-full text-2xl font-bold text-blue-800 capitalize ;
+    }
+    /* isi kontent */
+    .body {
+      @apply text-3xl font-semibold font-poppins text-blue-700;
+    }
+    /* itulah */
+    .display {
       @apply text-3xl font-semibold font-poppins text-blue-700;
     }
 }
