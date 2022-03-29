@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 @tailwind base;
@@ -16,15 +17,15 @@
 @layer components {
   /* judul besar */
     .title {
-      @apply text-4xl font-semibold font-poppins text-blue-700;
+      @apply text-4xl font-semibold font-poppins text-blue-800;
     }
     /* judul kecil */
     .subtitle {
-      @apply text-center md:text-left w-full text-2xl font-bold text-blue-800 capitalize ;
+      @apply text-center md:text-left w-full text-2xl font-bold text-blue-700 capitalize ;
     }
     /* isi kontent */
     .isi {
-      @apply text-md font-light font-poppins leading-relaxed;
+      @apply text-base font-light font-poppins leading-relaxed;
     }
     /* itulah */
     .display {

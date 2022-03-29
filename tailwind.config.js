@@ -4,6 +4,7 @@ module.exports = {
             'poppins': ['Poppins'],
             'roboto': ['Roboto'],
             'montserrat': ['Montserrat'],
+            'nunito': ['Nunito'],
         }
     },
     content: ["*.{html,js}"],
