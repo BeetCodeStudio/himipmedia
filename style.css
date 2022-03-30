@@ -21,11 +21,21 @@
     }
     /* judul kecil */
     .subtitle {
-      @apply text-center md:text-left w-full text-2xl font-bold text-blue-700 capitalize ;
+      @apply text-center md:text-left w-full text-3xl font-poppins font-bold text-blue-800 uppercase;
+    }
+    /* judul kecil */
+    .title2 {
+      @apply text-center w-full text-2xl font-poppins font-bold text-blue-800 uppercase;
+    }
+    .title-container{
+      @apply py-10 space-y-5 text-center;
+    }
+    .petunjuk {
+      @apply text-base font-normal text-slate-500 font-poppins leading-relaxed;
     }
     /* isi kontent */
     .isi {
-      @apply text-base font-light font-poppins leading-relaxed;
+      @apply text-base font-normal ;
     }
     /* itulah */
     .display {
@@ -34,6 +44,10 @@
     /* button */
     .button-min {
       @apply my-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded;
+    }
+    /* card */
+    .card {
+      @apply bg-slate-100 border-2 border-gray-300 rounded-md;
     }
     
 }
