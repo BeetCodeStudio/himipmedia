@@ -862,6 +862,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
+.h-24{
+  height: 6rem;
+}
+
+.h-36{
+  height: 9rem;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1835,6 +1843,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:h-36{
     height: 9rem;
+  }
+
+  .md\:h-96{
+    height: 24rem;
   }
 
   .md\:w-1\/3{
